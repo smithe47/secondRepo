@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>Excersise</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+    </head>
+    
+    <body>
+    <!--Javascript Button Example-->
+
+        <h1>JS button</h1>
+        <button type="button" onclick="varInc()">Change Text Color</button>
+        <h1 id="changeTxt">TEXT TO CHANGE</h1>
+
+        <br>
+        <br>
+
+    <!--HTML Video Example-->
+
+        <h1>HTML5 Video</h1>
+
+        <h2>Autoplay Muted:</h2>
+        <br>
+
+    <!--Video player with autoplay and muted attributes-->
+
+        <video width="500" height="" autoplay muted loop id="autoPlay">
+            <source src="octo.mp4" type="video/mp4">
+                Video not supported in current browser 
+                <!--Text inside the video element will only display if video cannot-->
+        </video>
+
+        <br>
+        <h2>Controls with Thumbnail:</h2>
+        <br>
+
+    <!--Video player with the controls attribute-->
+
+        <video width="720" controls poster="thumb.png">
+            <source src="octo.mp4" type="video/mp4">
+                Video not supported in current browser
+        </video>
+        
+        <br>
+    <!--Video player with removed controll settings-->
+
+        <h2>Control List:</h2>
+        <br>
+
+        <video width="720" controls controlsList="nofullscreen nodownload noplaybackrate">
+            <source src="octo.mp4" type="video/mp4">
+                Video not supported in current browser
+        </video>
+
+        <br>
+        <h2>iframe video: </h2>
+        <br>
+    <!--Iframe used to display video-->
+
+        <iframe src="octo.mp4" height="380" width="500" title="Test Title">
+
+        </iframe>
+    </body>
+
+    <!--Javascript-->
+
+    <footer>
+        <script type="text/javascript">
+
+            var inc = document.getElementById("changeTxt");
+            var x = 0;
+            console.log(x);
+            function varInc(){
+                x++;
+                console.log(x);
+                if(x == 3){
+                    console.log("x = 3, blue text applied");
+                    inc.style.color = "blue";
+                }
+                else if(x == 2){
+                    console.log("x = 2, green text applied");
+                    inc.style.color = "green";
+                }
+                else if(x == 1){
+                    console.log("x = 1, yellow text applied");
+                    inc.style.color = "yellow";
+                }
+                else{
+                    console.log("x > 3, end of color change, reseting X to 0");
+                    x = 0;
+                    inc.style.color = "white";
+                    
+                }
+            }
+
+        </script>
+    </footer>
+</html>

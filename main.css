@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(26, 29, 29);
+    height: 2500px;
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+#autoPlay{
+    border: solid black;
+}
+iframe{
+    background-color: black;
+    resize: both;
+}
+#inc{
+    color: white;
+}
